@@ -379,6 +379,23 @@ h1,h2,p{
     color: #FFF;
     margin-bottom: 10px;
 }
+.main__content__sales__auctions__cards__item__image__btn button{
+    width: 70%;
+    border-radius: 10px;
+    background: #4C4747;
+    border-color: #4C4747;;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.card-img-overlay{
+    padding: 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 
 .main__content__sales__auctions__cards__item p{
     text-align: center;
