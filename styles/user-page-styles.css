@@ -177,6 +177,11 @@ h1,h2,p{
     background: linear-gradient(180deg, #282828 0%, #7B7B7B 100%);
 }
 
+.main__sidebar__user-name__image img{
+    object-fit: cover;
+    max-height: 100%;
+}
+
 .main__sidebar__user-name h2{
     color: #6D8BB7;
     font-size: 24px;
@@ -526,6 +531,117 @@ h1,h2,p{
     font-weight: 300;
     line-height: normal;
 }
+
+
+.modal-header{
+    align-items: flex-start !important;
+    border-width: 0 !important;
+    padding: 0.5rem 0.5rem 0rem 1rem !important
+}
+
+.modal-header__link{
+    color: #6D8BB7;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.modal-header button{
+    height: 39px;
+    width: 39px;
+    padding: 0!important;
+    margin: 0 !important;
+    background-color: transparent;
+    align-self: flex-start;
+}
+
+.modal-title{
+    text-align: center;
+    color: #4C4747;
+    font-size: 36px;
+    font-weight: 500;
+    padding-right: 50px;
+}
+
+.modal-body{
+    padding-top: 0.5rem !important;
+}
+
+.modal-body__range{
+    padding: 0 1rem !important;
+}
+
+.modal-body__label{
+    color: #4C4747 !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    padding-top: 1rem!important;
+    margin: 0 !important;
+}
+
+.modal-body__title{
+    color: #4C4747 !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    padding: 0 1rem !important;
+    align-self: flex-start !important;
+}
+
+.modal-body__text{
+    color: #4C4747 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.modal-body__text__first{
+    text-align: start;
+}
+.modal-body__text__second{
+    text-align: center;
+}
+.modal-body__text__third{
+    text-align: end;
+}
+
+.form-range{
+    height: 12px !important;
+}
+
+.modal-body__background{
+    padding: 1rem 0rem!important;
+}
+
+.modal-body__description{
+    padding: 1rem 0rem!important;
+}
+
+.modal-body__description textarea{
+    background-color: #D9D9D9;
+    border-radius: 0!important;
+}
+
+.modal-body__images{
+    padding: 1rem 0rem!important;
+}
+
+.modal-body__images input{
+    background-color: #D9D9D9;
+    border-radius: 0!important;
+}
+
+.modal-footer{
+    border: 0!important;
+    justify-content: center !important;
+    padding-top: 0 !important;
+}
+
+.modal-footer button{
+    width: 15rem !important;
+    height: 2.5rem !important;
+    text-align: center;
+}
+
 
 /*----------characters----------*/
 

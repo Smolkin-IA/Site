@@ -131,6 +131,11 @@ body,p,h1{
     height: 78px;
 }
 
+.main__block__img img{
+    object-fit: cover;
+    max-height: 100%;
+}
+
 .main__sidebar__links{
     display: flex;
     flex-direction: column;
@@ -204,6 +209,11 @@ body,p,h1{
     width: 170px;
     height: 170px; 
     background: linear-gradient(180deg, #636363 0%, #ACACAC 100%);
+}
+
+.main__content__cards__item img{
+    object-fit: cover;
+    max-height: 100%;
 }
 
 @media(max-width:650px){

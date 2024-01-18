@@ -82,7 +82,7 @@
             </div>
             <div class="main__sidebar__user-name">
                 <div class="main__sidebar__user-name__image">
-                    <img src="Img/test-img2.png" class="img-fluid" alt="">
+                    <img src="../Img/test-img4.png" alt="">
                 </div>
                 <h2>UserName</h2>
             </div>
@@ -188,55 +188,140 @@
                             </div>
                         </div>
                         <p>Nothing chose yet</p>
-                        <button>Open form</button>
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal">Open form</button>
+                        <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <a href="#" class="modal-header__link">TOS&Rules</a>
+                                  <h1 class="modal-title" id="exampleModalLabel">Comissions form</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <label for="customRange2" class="form-label modal-body__label">Coung of characters:</label>
+                                <div class="col-12 modal-body__range">
+                                    <input type="range" class="form-range" min="0" max="2" id="customRange2">
+                                    <div class="row">
+                                        <p class="col-4 modal-body__text modal-body__text__first">1</p>
+                                        <p class="col-4 modal-body__text modal-body__text__second">2</p>
+                                        <p class="col-4 modal-body__text modal-body__text__third">3</p>
+                                    </div>
+                                </div>
+                                    <label for="customRange2" class="form-label modal-body__label">Body part №1</label>
+                                <div class="col-12 modal-body__range">
+                                    <input type="range" class="form-range" min="0" max="2" id="customRange2">
+                                    <div class="row">
+                                        <p class="col-4 modal-body__text modal-body__text__first">head</p>
+                                        <p class="col-4 modal-body__text modal-body__text__second">half</p>
+                                        <p class="col-4 modal-body__text modal-body__text__third">full</p>
+                                    </div>
+                                </div>
+                                    <label for="customRange2" class="form-label modal-body__label">Body part №2</label>
+                                <div class="col-12 modal-body__range">    
+                                    <input type="range" class="form-range" min="0" max="2" id="customRange2">
+                                    <div class="row">
+                                        <p class="col-4 modal-body__text modal-body__text__first">head</p>
+                                        <p class="col-4 modal-body__text modal-body__text__second">half</p>
+                                        <p class="col-4 modal-body__text modal-body__text__third">full</p>
+                                    </div>
+                                </div>
+                                    <label for="customRange2" class="form-label modal-body__label">Body part №3</label>
+                                <div class="col-12 modal-body__range">    
+                                    <input type="range" class="form-range" min="0" max="2" id="customRange2">
+                                    <div class="row">
+                                        <p class="col-4 modal-body__text modal-body__text__first">head</p>
+                                        <p class="col-4 modal-body__text modal-body__text__second">half</p>
+                                        <p class="col-4 modal-body__text modal-body__text__third">full</p>
+                                    </div>
+                                </div>
+                                    <div class="row modal-body__background">
+                                        <p class="col-2 modal-body__title">Background:</p>
+                                        <div class="col-10">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="form-check-label modal-body__text" for="inlineRadio1">simple</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                            <label class="form-check-label modal-body__text" for="inlineRadio2">complex (write in description)</label>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="row modal-body__description">
+                                        <p class="col-2 modal-body__title">Description:</p>
+                                        <div class="col-10">
+                                            <textarea class="form-control" placeholder="Write your description here" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row modal-body__images">
+                                        <p class="col-2 modal-body__title">Images:</p>
+                                        <div class="col-10">
+                                        <div class="input-group mb-3">
+                                            <input type="file" class="form-control" id="inputGroupFile02">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input class="form-control" type="text" placeholder="or put a link for your character(s)">
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary">Confirm and send</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
-            </div>
-            <div class="main__content__characters">
-                <div class="main__content__characters__title">
-                    <h2>Characters</h2>
-                    <div class="main__content__characters__title__links">
-                        <a href="#">Add</a>
-                        <a href="#">Edit</a>
+            </div>>
+            <div class="main__content__characters__cards">
+                <div class="main__content__characters__cards__item">
+                    <div class="main__content__characters__cards__item__img">
+                        <img src="../Img/test-img3.png" class="card-img" alt="">
                     </div>
+                    <a href="characters-page.html">
+                        <p>Character placeholder</p>
+                    </a>
                 </div>
-                <div class="main__content__characters__cards">
-                    <div class="main__content__characters__cards__item">
-                        <div class="main__content__characters__cards__item__img"></div>
-                        <a href="characters-page.html">
-                            <p>Name</p>
-                        </a>
+                <div class="main__content__characters__cards__item">
+                    <div class="main__content__characters__cards__item__img">
+                        <img src="../Img/test-img3.png" class="card-img" alt="">
                     </div>
-                    <div class="main__content__characters__cards__item">
-                        <div class="main__content__characters__cards__item__img"></div>
-                        <a href="characters-page.html">
-                            <p>Name</p>
-                        </a>
+                    <a href="characters-page.html">
+                        <p>Character placeholder</p>
+                    </a>
+                </div>
+                <div class="main__content__characters__cards__item">
+                    <div class="main__content__characters__cards__item__img">
+                        <img src="../Img/test-img3.png" class="card-img" alt="">
                     </div>
-                    <div class="main__content__characters__cards__item">
-                        <div class="main__content__characters__cards__item__img"></div>
-                        <a href="characters-page.html">
-                            <p>Name</p>
-                        </a>
+                    <a href="characters-page.html">
+                        <p>Character placeholder</p>
+                    </a>
+                </div>
+                <div class="main__content__characters__cards__item">
+                    <div class="main__content__characters__cards__item__img">
+                        <img src="../Img/test-img3.png" class="card-img" alt="">
                     </div>
-                    <div class="main__content__characters__cards__item">
-                        <div class="main__content__characters__cards__item__img"></div>
-                        <a href="characters-page.html">
-                            <p>Name</p>
-                        </a>
+                    <a href="characters-page.html">
+                        <p>Character placeholder</p>
+                    </a>
+                </div>
+                <div class="main__content__characters__cards__item">
+                    <div class="main__content__characters__cards__item__img">
+                        <img src="../Img/test-img3.png" class="card-img" alt="">
                     </div>
-                    <div class="main__content__characters__cards__item">
-                        <div class="main__content__characters__cards__item__img"></div>
-                        <a href="characters-page.html">
-                            <p>Name</p>
-                        </a>
+                    <a href="characters-page.html">
+                        <p>Character placeholder</p>
+                    </a>
+                </div>
+                <div class="main__content__characters__cards__item">
+                    <div class="main__content__characters__cards__item__img">
+                        <img src="../Img/test-img3.png" class="card-img" alt="">
                     </div>
-                    <div class="main__content__characters__cards__item">
-                        <div class="main__content__characters__cards__item__img"></div>
-                        <a href="characters-page.html">
-                            <p>Name</p>
-                        </a>
-                    </div>
+                    <a href="characters-page.html">
+                        <p>Character placeholder</p>
+                    </a>
                 </div>
             </div>
         </div>
