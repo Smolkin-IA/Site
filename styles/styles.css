@@ -127,6 +127,11 @@ body,h1,p{
     background: linear-gradient(180deg, #282828 0%, #7B7B7B 100%);
 }
 
+.offcanvas-body__user-name__image img{
+    object-fit: cover;
+    max-height: 100%;
+}
+
 .offcanvas-body__user-name a{
     text-decoration: none;
     color: #6D8BB7;
