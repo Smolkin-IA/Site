@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="User registration page">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../styles/reg-page-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">
+            <p>CHARLIB</p>
+        </a>
+        <div class="header__links">
+            <a href="">Войти</a>
+            <div class="dropdown">
+                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Language
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">English</a></li>
+                    <li><a class="dropdown-item" href="../RU/reg-page.html">Russian</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <form class="reg-block" id="reg__form">
+            <h1>Registration</h1>
+            <input type="email" 
+                   id="email" 
+                   required 
+                   placeholder="Email"
+                   title="Пожалуйста, введите действительный адрес электронной почты"
+            >
+            <input type="text" 
+                   name="username"
+                   required 
+                   pattern="[a-zA-Z]{3,}"
+                   placeholder="Login"
+                   title="Пожалуйста, введите не менее трех букв латинского алфавита"
+            >
+            <input type="password"
+                   name="password"
+                   required 
+                   pattern="(?=.*\d)(?=.*[A-Z]).{6,}" 
+                   placeholder="Password"
+                   title="не менее 6 символов, включая хотя бы одну цифру и одну заглавную букву"
+            >
+            <div class="reg-block__checkbox">
+                <input type="checkbox" id="Checkbox" name="Checkbox">
+                <label for="Checkbox">Remember me</label>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div class="footer">
+        <a href="#">Rules</a>
+        <a href="#">FAQ</a>
+        <a href="#">About</a>
+    </div>
+    <script src="../scripts/reg-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
