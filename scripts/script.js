@@ -31,14 +31,14 @@ window.addEventListener('resize', function() {
   updateCarouselWidth();
   updateCardWidth();
   updateMaxVisibleCards();
-  scrollPosition = currentIndex * cardWidth; 
+  scrollPosition = currentIndex * (cardWidth + 20);
   var carouselInner = document.querySelector('.carousel-inner.auc-inner');
   carouselInner.scrollLeft = scrollPosition;
 });
 
 document.querySelector('.carousel-control-next').addEventListener('click', function() {
   if (scrollPosition < (carouselWidth - cardWidth * maxVisibleCards)) {
-    scrollPosition += cardWidth;
+    scrollPosition += cardWidth + 20;
     let carouselInner = document.querySelector('.carousel-inner.auc-inner');
     carouselInner.scroll({
       left: scrollPosition,
@@ -49,7 +49,7 @@ document.querySelector('.carousel-control-next').addEventListener('click', funct
 
 document.querySelector('.carousel-control-prev').addEventListener('click', function() {
   if (scrollPosition > 0) {
-    scrollPosition -= cardWidth;
+    scrollPosition -= cardWidth + 20;
     let carouselInner = document.querySelector('.carousel-inner.auc-inner');
     carouselInner.scroll({
       left: scrollPosition,
